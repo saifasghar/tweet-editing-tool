@@ -1,0 +1,387 @@
+<div class="fixed bottom-4 lg:bottom-0 left-0 right-0 flex justify-center z-20 p-4 pointer-events-none controls-scale"
+    style="visibility:visible;z-index:20">
+    <div
+        class="flex flex-wrap justify-center space-x-2 space-y-1 sm:space-y-0 bg-gray-200 rounded-xl p-1 sm:p-2 shadow-xl controls-inner select-none">
+        <!-- SCREENS -->
+        <div class="group relative pointer-events-auto">
+            <div class="min-h-fit h-[130px] pb-5 hidden absolute -top-[111px] sm:-top-[115px] group-hover:flex">
+                <div class="p-0 w-40 rounded-md bg-transparent">
+                    <div
+                        class="grid grid-cols-3 grid-flow-row p-2.5 gap-2 bg-gray-200 rounded-lg h-[102px] overflow-y-scroll thin-scroll-bar">
+                        <!-- <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);background-size:contain">
+                        </div> -->
+                        <div (click)="selectGradient('darkblue')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image: linear-gradient(45deg, rgb(95, 108, 138) 0%, rgb(48, 59, 94) 100%); background-size: contain;">
+                        </div>
+
+                        <!-- <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/nature.jpg);background-size:contain"></div> -->
+                        <div (click)="selectGradient('skyblue')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);background-size:contain">
+                        </div>
+                        <div (click)="selectGradient('pink')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to bottom right, #FF61D2, #FE9090);background-size:contain">
+                        </div>
+                        <!-- <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01));background-size:contain">
+                        </div> -->
+                        <!-- <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/abstract.jpg);background-size:contain"></div> -->
+                        <div (click)="selectGradient('lightpurple')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);background-size:contain">
+                        </div>
+                        <div (click)="selectGradient('darkpurple')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:radial-gradient(at center bottom, rgb(253, 230, 138), rgb(124, 58, 237), rgb(12, 74, 110));background-size:contain">
+                        </div>
+                        <div (click)="selectGradient('dark')"
+                            class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to top, rgb(17, 24, 39), rgb(75, 85, 99));background-size:contain">
+                        </div>
+                        <!-- <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/yellow.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/gradient.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/new.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to right, rgb(165, 243, 252), rgb(34, 211, 238));background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to right, rgb(254, 240, 138), rgb(251, 207, 232), rgb(244, 114, 182));background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to right top, #a3c8ff, #a4c3ff, #a6beff, #aab9ff, #afb3ff);background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to right, rgb(196, 181, 253), rgb(167, 139, 250));background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/material.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/board.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/light.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:url(/gradients/cool.jpg);background-size:contain"></div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to top, #0f2027, #203a43, #2c5364);background-size:contain">
+                        </div>
+                        <div class="w-10 h-10 rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer"
+                            style="background-image:linear-gradient(to left, #8A88FB, #D079EE);background-size:contain">
+                        </div>
+                        <input type="color"
+                            class="w-full h-10 p-0 border-none appearance-none rounded-md hover:ring-rose-300 hover:ring-2 hover:scale-105 transition-all cursor-pointer color-selector bg-transparent col-span-3 relative z-5"
+                            style="background:#0a3c53" value="#0a3c53" /> -->
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-[70px] h-[70px] p-5 flex flex-col items-center justify-center mt-1 sm:mt-0 hover:bg-gray-400/20 rounded-md cursor-pointer transition-all">
+                <div class="pb-1">
+                    <div #styleMainBtn class="w-7 h-7 shadow rounded-full"
+                        style="background-image:linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);background-size:contain">
+                    </div>
+                </div>
+                <div class="text-sm">Screens</div>
+            </div>
+        </div>
+        <!-- CARD -->
+        <div (click)="changeTweetGradient()"
+            class="p-5 rounded-lg flex flex-col items-center justify-center space-y-2 cursor-pointer relative transition-all duration-300 pointer-events-auto max-w-[70px] h-[70px] hover:bg-gray-400/20">
+            <div>
+                <svg *ngIf="tweetGradientType === 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                    viewBox="0 0 20 20" fill="#4F4F4F">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <svg *ngIf="tweetGradientType === 'light'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                    viewBox="0 0 20 20" fill="#4F4F4F">
+                    <circle cx="10" cy="10" r="8" fill="#4F4F4F" />
+                </svg>
+            </div>
+            <div class="text-sm">Card</div>
+        </div>
+        <!-- RESPONSE -->
+        <div (click)="toggleResponses()"
+            class="p-5 rounded-lg flex flex-col items-center justify-center space-y-2 cursor-pointer relative transition-all duration-300 pointer-events-auto max-w-[70px] h-[70px] hover:bg-gray-400/20">
+            <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.41867 6.39526C1.69507 5.72797 2.1002 5.12165 2.61093 4.61093C3.12165 4.1002 3.72797 3.69507 4.39526 3.41867C5.06255 3.14226 5.77775 3 6.50003 3C7.2223 3 7.9375 3.14226 8.60479 3.41867C9.27209 3.69507 9.8784 4.1002 10.3891 4.61093L12 6.22181L13.6109 4.61093C14.6423 3.57948 16.0413 3.00001 17.5 3.00001C18.9587 3.00001 20.3576 3.57948 21.3891 4.61093C22.4205 5.64238 23 7.04133 23 8.50003C23 9.95872 22.4205 11.3577 21.3891 12.3891L12 21.7782L2.61093 12.3891C2.1002 11.8784 1.69507 11.2721 1.41867 10.6048C1.14226 9.9375 1 9.2223 1 8.50003C1 7.77775 1.14226 7.06255 1.41867 6.39526Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                </svg></div>
+            <div class="text-sm">Response</div>
+        </div>
+        <!-- CONTROLS -->
+        <div class="group relative pointer-events-auto">
+            <div class="min-h-fit pb-5 hidden absolute -top-[91px] group-hover:flex -left-full">
+                <div class="p-0 rounded-md bg-blue-200 w-[290px] overflow-hidden">
+                    <div class="grid grid-cols-4 p-2.5 gap-2 bg-gray-200 thin-scroll-bar w-full">
+                        <button (click)="changeTextSize()"
+                            class="flex flex-col gap-2 items-center hover:bg-gray-400/20 rounded-md p-1"><svg width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM3.54739 12C3.54739 16.6682 7.33175 20.4526 12 20.4526C16.6682 20.4526 20.4526 16.6682 20.4526 12C20.4526 7.33175 16.6682 3.54739 12 3.54739C7.33175 3.54739 3.54739 7.33175 3.54739 12Z"
+                                    fill="#4F4F4F"></path>
+                                <circle cx="12" cy="12" r="2" fill="#4F4F4F"></circle>
+                            </svg>
+                            <div class="text-sm">Size</div>
+                        </button>
+                        <button (click)="toggleBorder()"
+                            class="flex flex-col gap-2 items-center hover:bg-gray-400/20 rounded-md p-1"><svg width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_4239_247)" class="opacity-0">
+                                    <path
+                                        d="M4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z"
+                                        stroke="#C4C4C4" stroke-opacity="0.62" stroke-width="4" stroke-linejoin="round">
+                                    </path>
+                                </g>
+                                <rect x="4" y="4" width="16" height="16" rx="1" fill="#4F4F4F"></rect>
+                                <defs class="opacity-0">
+                                    <filter id="filter0_b_4239_247" x="-23" y="-23" width="70" height="70"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="12"></feGaussianBlur>
+                                        <feComposite in2="SourceAlpha" operator="in"
+                                            result="effect1_backgroundBlur_4239_247">
+                                        </feComposite>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4239_247"
+                                            result="shape">
+                                        </feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <div class="text-sm">Border</div>
+                        </button>
+                        <button (click)="toggleNoPadding()"
+                            class="flex flex-col gap-2 items-center hover:bg-gray-400/20 rounded-md p-1 w-16"><svg
+                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2H2V22H22V2Z" stroke="#4F4F4F" stroke-width="2" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <div class="text-sm whitespace-pre">No pad</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-[70px] h-[70px] p-5 flex flex-col items-center justify-center mt-1 sm:mt-0 hover:bg-gray-400/20 rounded-md cursor-pointer transition-all">
+                <div class="pb-1.5 -mt-1.5 sm:-mt-[1px] group"><svg width="25" height="25" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-90 origin-center transition-transform ease-in duration-200">
+                        <path
+                            d="M9.59399 3.94C9.68399 3.398 10.154 3 10.704 3H13.297C13.847 3 14.317 3.398 14.407 3.94L14.62 5.221C14.683 5.595 14.933 5.907 15.265 6.091C15.339 6.131 15.412 6.174 15.485 6.218C15.809 6.414 16.205 6.475 16.56 6.342L17.777 5.886C18.0264 5.79221 18.301 5.78998 18.5519 5.87971C18.8028 5.96945 19.0136 6.14531 19.147 6.376L20.443 8.623C20.576 8.8537 20.6229 9.12413 20.5753 9.38617C20.5277 9.6482 20.3887 9.88485 20.183 10.054L19.18 10.881C18.887 11.121 18.742 11.494 18.749 11.873C18.7506 11.958 18.7506 12.043 18.749 12.128C18.742 12.506 18.887 12.878 19.179 13.118L20.184 13.946C20.608 14.296 20.718 14.9 20.444 15.376L19.146 17.623C19.0128 17.8536 18.8022 18.0296 18.5515 18.1195C18.3008 18.2094 18.0264 18.2074 17.777 18.114L16.56 17.658C16.205 17.525 15.81 17.586 15.484 17.782C15.4115 17.8261 15.3381 17.8688 15.264 17.91C14.933 18.093 14.683 18.405 14.62 18.779L14.407 20.059C14.317 20.602 13.847 21 13.297 21H10.703C10.153 21 9.68299 20.602 9.59299 20.06L9.37999 18.779C9.31799 18.405 9.06799 18.093 8.73599 17.909C8.66184 17.8681 8.58849 17.8258 8.51599 17.782C8.19099 17.586 7.79599 17.525 7.43999 17.658L6.22299 18.114C5.97372 18.2075 5.69936 18.2096 5.44869 18.1199C5.19803 18.0302 4.9873 17.8545 4.85399 17.624L3.55699 15.377C3.42394 15.1463 3.37704 14.8759 3.42465 14.6138C3.47226 14.3518 3.61128 14.1152 3.81699 13.946L4.82099 13.119C5.11299 12.879 5.25799 12.506 5.25099 12.127C5.24943 12.042 5.24943 11.957 5.25099 11.872C5.25799 11.494 5.11299 11.122 4.82099 10.882L3.81699 10.054C3.61153 9.88489 3.47267 9.64843 3.42506 9.38662C3.37746 9.12481 3.42421 8.8546 3.55699 8.624L4.85399 6.377C4.98718 6.14614 5.198 5.97006 5.4489 5.88014C5.6998 5.79021 5.97448 5.79229 6.22399 5.886L7.43999 6.342C7.79599 6.475 8.19099 6.414 8.51599 6.218C8.58799 6.174 8.66199 6.131 8.73599 6.09C9.06799 5.907 9.31799 5.595 9.37999 5.221L9.59399 3.94V3.94Z"
+                            stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12V12Z"
+                            stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                <div class="text-sm">Controls</div>
+            </div>
+        </div>
+        <!-- COPY -->
+        <!-- <div (click)="copyCanvasAsSvg()"
+            class="p-5 rounded-lg flex flex-col items-center justify-center space-y-2 cursor-pointer relative transition-all duration-300 pointer-events-auto max-w-[70px] h-[70px] hover:bg-gray-400/20">
+            <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 3C1 1.89543 1.89543 1 3 1H15C16.1046 1 17 1.89543 17 3V4H16V3C16 2.44772 15.5523 2 15 2H3C2.44772 2 2 2.44772 2 3V15C2 15.5523 2.44772 16 3 16H4V17H3C1.89543 17 1 16.1046 1 15V3Z"
+                        fill="#4F4F4F"></path>
+                    <rect x="7" y="7" width="16" height="16" rx="2" fill="#4F4F4F"></rect>
+                </svg></div>
+            <div class="text-sm">Copy</div>
+        </div> -->
+        <!-- DOWNLOAD -->
+        <div (click)="copyCanvasAsPng()"
+            class="p-5 rounded-lg flex flex-col items-center justify-center space-y-2 cursor-pointer relative transition-all duration-300 pointer-events-auto bg-blue-300 shadow-sm hover:bg-blue-400/90 px-5 h-[70px]">
+            <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11V17C1 18.6569 2.34315 20 4 20H20C21.6569 20 23 18.6569 23 17V11" stroke="#4F4F4F"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13 2C13 1.44772 12.5523 1 12 1C11.4477 1 11 1.44772 11 2L11 12.3765L8.7328 9.93493C8.357 9.53022 7.72426 9.50679 7.31955 9.88259C6.91484 10.2584 6.89141 10.8911 7.26721 11.2958L11.2672 15.6035C11.4564 15.8073 11.7219 15.9231 12 15.9231C12.2781 15.9231 12.5436 15.8073 12.7328 15.6035L16.7328 11.2958C17.1086 10.8911 17.0852 10.2584 16.6805 9.88259C16.2757 9.50679 15.643 9.53022 15.2672 9.93493L13 12.3765L13 2Z"
+                        fill="#4F4F4F"></path>
+                </svg></div>
+            <div class="text-sm">Download</div>
+        </div>
+    </div>
+</div>
+<div class="h-full w-full overflow-auto grid place-items-center select-none scroll-bar {{!showCanvas && 'd-none'}}"
+    style="position: relative">
+    <div class="canvas-container">
+        <canvas class='animate-gradient' #canvasEl width="810" height="410" style="border-radius: 10px;">
+        </canvas>
+
+        <div class="resize-handle left" (mousedown)="onResizeHandleMouseDown('left', $event)"></div>
+        <div class="resize-handle right" (mousedown)="onResizeHandleMouseDown('right', $event)"></div>
+        <div class="resize-handle bottom" (mousedown)="onResizeHandleMouseDown('bottom', $event)"></div>
+        <div class="resize-handle top" (mousedown)="onResizeHandleMouseDown('top', $event)"></div>
+    </div>
+
+</div>
+<canvas #tempCanvas style="display: none;"></canvas>
+<div *ngIf="tweet">
+    <div class="card" #card>
+        <div class="header">
+            <img crossorigin="anonymous" #avatarImage [src]="tweet.avatar" class="avatar" alt="User Avatar">
+            <span class="username">{{tweet.title}}</span>
+        </div>
+        <div #content class="content" style="white-space: pre-line;">
+            {{ tweet.text }}
+        </div>
+        <div #timestamp class="timestamp">
+            {{tweet.time}}
+        </div>
+        <div #responses *ngIf="showResponses" class="responses">
+            <div class="response repost">{{tweet.reposts}}<span class="reponses-titles">Repost</span></div>
+            <div class="response quotes">{{tweet.quotes}}<span class="reponses-titles">Quotes</span></div>
+            <div class="response likes">{{tweet.likes}}<span class="reponses-titles">Likes</span></div>
+            <div class="response bookmarks">{{tweet.bookmarks}}<span class="reponses-titles">Bookmarks</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="h-full w-full overflow-auto grid place-items-center select-none scroll-bar">
+    <div
+        class="relative w-full h-full z-10 pointer-events-none grid place-items-center pt-[8rem] sm:pt-36 pb-30 sm:pb-44 image-layer">
+        <div class="relative">
+            <div class="relative overflow-hidden grid place-items-center rounded-xl screen-scale box-shadow"
+                style="width:696px;height:340px">
+                <div class="absolute left-0 top-0 w-full h-full z-10">
+                    <div class="top-1/2 right-0 -translate-y-1/2 translate-x-1/2 cursor-ew-resize absolute flex items-center justify-center w-8 h-8 group pointer-events-auto"
+                        style="touch-action:none">
+                        <div
+                            class="w-5 h-8 lg:w-2.5 lg:h-5 rounded bg-white group-hover:scale-150 transition-transform shadow-md">
+                        </div>
+                    </div>
+                    <div class="top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 cursor-ew-resize absolute flex items-center justify-center w-8 h-8 group pointer-events-auto"
+                        style="touch-action:none">
+                        <div
+                            class="w-5 h-8 lg:w-2.5 lg:h-5 rounded bg-white group-hover:scale-150 transition-transform shadow-md">
+                        </div>
+                    </div>
+                    <div class="bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 cursor-ns-resize absolute flex items-center justify-center w-8 h-8 group pointer-events-auto"
+                        style="touch-action:none">
+                        <div
+                            class="w-8 h-5 lg:w-5 lg:h-2.5 rounded bg-white group-hover:scale-150 transition-transform shadow-md">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-full relative">
+                    <div class="w-full h-full relative bg-transparent transition-all duration-300 pointer-events-auto"
+                        style="background-image:linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);background-repeat:no-repeat;background-size:cover;background-position:center center;border-radius:0">
+                        <div class="h-full w-full grid place-items-center select-none overflow-hidden z-0"
+                            style="padding:56px">
+                            <div class="relative bg-gradient-to-br from-gray-100/50 via-gray-200/40 to-gray-100/30 border-t border-white/40 backdrop-blur overflow-hidden card-shadow transition-all ease-linear duration-400"
+                                style="max-width:630px;padding:6px;border-radius:1.3rem">
+                                <div class="border rounded-2xl p-7 relative select-none w-full transition-all duration-200"
+                                    style="background-image:linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(229,231,235,0.8));border-color:#f3f4f6">
+                                    <div class="absolute top-[20px] left-[28px] z-[8] opacity-30"><svg width="36"
+                                            height="28" viewBox="0 0 36 28" fill="#747474"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.5 17.9783C19.5 10.0955 25.338 1.8492 34.5 0L35.976 3.25987C32.6535 4.5402 29.7315 8.9976 29.406 12.0704C33.1425 12.6715 36 15.9758 36 19.9655C36 24.8446 32.124 27.6 28.2015 27.6C23.679 27.6 19.5 24.0657 19.5 17.9783V17.9783ZM0 17.9783C0 10.0955 5.838 1.8492 15 0L16.476 3.25987C13.1535 4.5402 10.2315 8.9976 9.906 12.0704C13.6425 12.6715 16.5 15.9758 16.5 19.9655C16.5 24.8446 12.624 27.6 8.7015 27.6C4.179 27.6 0 24.0657 0 17.9783Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="overflow-hidden">
+                                        <div class="absolute top-2.5 right-3 transition-all"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36px"
+                                                height="36px">
+                                                <path fill="#03A9F4"
+                                                    d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429">
+                                                </path>
+                                            </svg></div>
+                                        <div class="tweet-text z-10 relative border-red-500 transition-all duration-300"
+                                            style="padding-top:1.8rem;font-size:1.1rem;line-height:1.63rem;color:#000">
+                                            Create and share
+                                            beautiful images of tweets.<br><br>Paste the tweet URL in the search box to
+                                            generate a
+                                            <i>tweetlet</i>. ❤️ <br><br>Try <a href="/text">Text mode</a> to create
+                                            <i>amazing</i>🔥
+                                            images from text. Check the <a
+                                                href="https://www.youtube.com/watch?v=Zhia-Kuc4sw" target="_blank">demo
+                                                video</a> for more.
+                                        </div>
+                                        <div class="flex justify-end p-2 pb-0 mt-5">
+                                            <div class="flex items-center space-x-3"><img src="/user.png" alt="profile"
+                                                    class="rounded-full transition-all duration-300"
+                                                    style="width:44px;height:44px" />
+                                                <div>
+                                                    <div class="flex items-center space-x-1 font-semibold -mb-[2px] transition-all"
+                                                        style="font-size:1.1rem;color:#000"><span>Little Champ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="transition-all duration-300"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-3 font-medium drop-shadow-md bg-gray-100 border rounded-lg py-0 px-2 opacity-90 pr-1.5 flex items-center gap-2 whitespace-nowrap">
+                                <span>tweetlet.net</span><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                    height="1em" viewBox="0 0 32 32">
+                                    <g fill="none">
+                                        <path fill="#F3AD61"
+                                            d="M29.374 2h-4.17a22.4 22.4 0 0 0-6.194.874l-1.99 3.17L14.012 5a22.395 22.395 0 0 0-3.269 2.3a19.025 19.025 0 0 0-6.72 14.51v3.25s.17-.3.49-.81c-.09.38-.13.59-.13.59v.22h3.92c2.08 0 4.08-.47 5.89-1.34c.21-.1.21-.4 0-.5l-2.17-1.01c-.13-.04-.09-.21.04-.21h4.53c.21 0 .41-.08.57-.21c1.33-1.14 2.45-2.54 3.27-4.15c.3-.6.87-1.67 1.18-2.25c.13-.24.12-.53-.02-.77l-1.36-2.24a.25.25 0 0 1 .21-.38l1.533-.994l2.044-1.998l2.76-2.002a45.861 45.861 0 0 1 3.043-3.816c.13-.14.2-.33.2-.52a.653.653 0 0 0-.65-.67Z">
+                                        </path>
+                                        <path fill="#A56953"
+                                            d="M14 12h9.114c.26 0 .51-.14.64-.36c.94-1.57 1.96-3.14 3.04-4.64h-7.79V2.88A22.129 22.129 0 0 0 14 5.016V12Z">
+                                        </path>
+                                        <path fill="#D3883E"
+                                            d="M25.284 4.14a.498.498 0 0 0-.65-.23c-4.6 2.07-8.74 4.94-12.34 8.53a41.584 41.584 0 0 0-8.92 13.22a41.47 41.47 0 0 0-1.35 3.67c-.09.3.08.61.38.66c.26.05.5-.11.57-.35c.38-1.21.82-2.41 1.32-3.59c2.04-4.83 4.97-9.18 8.7-12.9c3.51-3.51 7.55-6.3 12.04-8.32a.5.5 0 0 0 .25-.69c0 .01 0 .01 0 0Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fixed bottom-1 sm:bottom-2 left-8 sm:left-4 z-[5] select-none">
+</div>
+<div class="fixed right-1 bottom-1 lg:right-6 lg:bottom-5 pointer-events-none" style="z-index:5">
+    <div class="flex flex-col space-y-5 px-1 overflow-hidden items-end relative">
+        <div
+            class="flex flex-col space-y-3 rounded-lg p-4 border-white translate-x-[100%] invisible transition-all duration-300 z-0">
+            <div class="text-lg font-semibold text-gray-50">Suggestions/feedback</div>
+            <div><input type="text" name="name" class="w-full rounded outline-none p-1 px-2 text-sm"
+                    placeholder="Name" />
+            </div>
+            <div><input type="email" name="email" class="w-full rounded outline-none p-1 px-2 text-sm"
+                    placeholder="Email (optional)" /></div>
+            <div><input type="text" name="twitter" class="w-full rounded outline-none p-1 px-2 text-sm"
+                    placeholder="@twitter (optional)" /></div>
+            <div><textarea name="message"
+                    class="w-full rounded outline-none p-1 px-2 text-sm rows max-h-[300px] scroll-bar"
+                    placeholder="Message" rows="4"></textarea></div>
+            <div><button
+                    class="w-full rounded-md py-1 px-2 text-gray-50 bg-blue-500 hover:bg-blue-500/80 transition">Send</button>
+            </div>
+        </div>
+    </div>
+</div> -->

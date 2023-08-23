@@ -1,0 +1,144 @@
+.canvas-container {
+    position: relative;
+    /* Ensure relative positioning for proper placement of resizing handles */
+    display: inline-block;
+    /* Make the container inline-block to fit the canvas size */
+}
+
+canvas {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.resize-handle {
+    position: absolute;
+    width: 6px;
+    height: 25px;
+    /* background-color: #000; */
+    background-color: rgb(255 255 255/ 1);
+}
+
+.left {
+    width: 6px;
+    height: 25px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.1s;
+    cursor: ew-resize;
+
+}
+
+.left:hover {
+    width: 8px;
+    height: 28px;
+}
+
+.right {
+    width: 6px;
+    height: 25px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    right: 0;
+    cursor: ew-resize;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.1s;
+}
+
+.right:hover {
+    width: 8px;
+    height: 28px;
+}
+
+.bottom {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    cursor: ns-resize;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 6px;
+    transition: 0.1s;
+    width: 25px;
+}
+
+.bottom:hover {
+    height: 8px;
+    width: 28px;
+}
+
+.top {
+    left: 50%;
+    height: 6px;
+    width: 25px;
+    top: 0;
+    transform: translate(-50%);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.1s;
+    cursor: ns-resize;
+}
+
+.top:hover {
+    height: 8px;
+    width: 28px;
+}
+
+
+.card {
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    /* margin: auto; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.timestamp {
+    color: #7a8b97;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.responses {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.response {
+    margin-right: 10px;
+}
+
+.reponses-titles {
+    margin-left: 2px;
+    font-weight: 600;
+}

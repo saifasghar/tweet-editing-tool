@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.d-none {
+    display: none;
+}
+
+.animate-gradient {
+    transition: background-image 0.5s ease-in-out;
+}
