@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class TweetService {
 
-  private baseUrl = 'http://localhost:3000'; // Replace with your API base URL
+  private baseUrl = 'https://tweet-editing-tool-node.vercel.app'; // Replace with your API base URL
 
   constructor(private http: HttpClient) { }
 
